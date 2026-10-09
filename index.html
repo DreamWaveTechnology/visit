@@ -1,13 +1,464 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Dummy Landing Page</title>
-  <style>
-    body{height:100dvh; width: 100dvw; display: flex; flex-direction: column; align-items: center; justify-content: center;}
-  </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="cursor.css">
+        <link rel="stylesheet" href="media-query.css">
+        <link rel="shortcut icon" href="dwt-logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  <script>
-    window.location.replace("https://example.com/");
-  </script>
+        <!-- ========= ANIMATED GRID BACKGROUND ========== -->
+        <!--<canvas id="kineticCanvas"></canvas>-->
+
+        <!-- ========= ANIMATED CURSOR ========== -->
+        <div>
+                <div class="custom-cursor-dot" data-cursor-dot></div>
+                <div class="custom-cursor-ring ring-1" data-cursor-ring-1></div>
+                <div class="custom-cursor-ring ring-2" data-cursor-ring-2></div>
+                <div class="custom-cursor-ring ring-3" data-cursor-ring-3></div>
+        </div>
+
+        <div class="container">
+                <nav class="navbar">
+                        <a href="index.html" class="logo">
+                                <img src="dwt-logo.png" alt="dreamwave technology logo">
+                                <div class="logo-text">
+                                        <h4>DreamWave</h4>
+                                        <h5>Technology</h5>
+                                </div>
+                        </a>
+                        <div class="nav-items">
+                                <div class="nav-links">
+                                        <a href="home.html" class="nav-link">Home</a>
+                                        <a href="services.html#services" class="nav-link">Our Services</a>
+                                        <a href="services.html#tech-stack" class="nav-link">Tech Stack</a>
+                                        <a href="about-us.html#about-us" class="nav-link">About Us</a>
+                                        <a href="about-us.html#blogs" class="nav-link">Blogs</a>
+                                        <a href="about-us.html#testimonials" class="nav-link">Testimonials</a>
+                                        <a href="contact-us.html#faq" class="nav-link">FAQ's</a>
+                                        <a href="contact-us.html#contact-us" class="nav-link">Contact Us</a>
+                                </div>
+                                <div class="scroll-progress" id="scrollProgress"></div>
+                        </div>
+                        <div class="nav-btns">
+                                <button class="theme-btn" id="themeBtn"><i class="ri-moon-fill" id="themeIcon"></i></button>
+                                <a href="login.html" class="nav-btn"><i class="ri-empathize-line"></i> Support</a>
+                        </div>
+                </nav>
+
+                <main class="main-container">
+                        <!-- =============== HOME / HERO SECTION =============== -->
+                        <section class="home" id="home">
+                                <!-- ========= HERO CONATINER ========== -->
+                                <div class="hero-section">
+                                        <div class="hero-header">
+                                                <p class="banner">Software Development Company</p>
+                                        </div>
+                                        <div class="hero-title">
+                                                <h1 class="hero-main-title">Discover Digital Solutions built by DreamWave Technology</h1>
+                                                <h3 class="hero-sub-title">From custom web applications and seamless e-commerce platforms to striking digital branding and portfolio designs, we transform your ideas into responsive, high-performing digital experiences.</h3>
+                                        </div>
+                                        <div class="hero-btns">
+                                                <a href="#start-project" class="hero-btn hero-fill-btn">Start a Project</a>
+                                                <a href="#projects" class="hero-btn hero-line-btn">Explore Works</a>
+                                        </div>
+                                </div>
+
+                                <!-- ========= DYNAMIC GRID CARD ========== -->
+                                <div class="show-results">
+                                        <div class="results-grid">
+                                                <div class="results-card">
+                                                        <h2 class="results-card-number">15+</h2>
+                                                        <p class="results-card-label">Projects Shipped</p>
+                                                </div>
+                                                <div class="results-card">
+                                                        <h2 class="results-card-number">100+</h2>
+                                                        <p class="results-card-label">Happy Clients</p>
+                                                </div>
+                                                <div class="results-card">
+                                                        <h2 class="results-card-number">99.9%</h2>
+                                                        <p class="results-card-label">Uptime Guarante</p>
+                                                </div>
+                                                <div class="results-card">
+                                                        <h2 class="results-card-number">3+ YRS</h2>
+                                                        <p class="results-card-label">Experience</p>
+                                                </div>
+                                                <div class="results-card">
+                                                        <h2 class="results-card-number">24/7</h2>
+                                                        <p class="results-card-label">Support Desk</p>
+                                                </div>
+                                                <div class="results-card">
+                                                        <h2 class="results-card-number">100%</h2>
+                                                        <p class="results-card-label">Client Satisfaction</p>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- ========= WHAT WE DO ========== -->
+                                <div class="what-we-do">
+                                        <p class="sub-section-banner"><i class="ri-service-fill"></i>What services do we provide ?</p>
+                                        <h2 class="section-heading">Engineering Scalable Digital Experiences</h2>
+                                        <p class="section-para">We design, develop, and maintain digital solutions that help businesses operate, grow, and compete in a connected world by building robust, high-performance web applications tailored to your exact needs—from seamless e-commerce platforms and immersive portfolios to complex point-of-sale and management systems engineered for secure, responsive, and reliable performance.</p>
+                                        <div class="what-we-do-grid">
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-briefcase-4-line"></i></div>
+                                                        <h3 class="we-do-heading">Web Development</h3>
+                                                        <p class="we-do-para">Built to establish a powerful online presence and engage your audience with impact.</p>
+                                                        <ul class="we-do-example">
+                                                                <li>Business Websites</li>
+                                                                <li>Portfolio Websites</li>
+                                                                <li>Web Applications</li>
+                                                                <li>Custome Platforms</li>
+                                                                <li>College & University Projects</li>
+                                                                <li>Web Portals & Communities</li>
+                                                        </ul>
+                                                </div>
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-shapes-line"></i></div>
+                                                        <h3 class="we-do-heading">Software Solutions</h3>
+                                                        <p class="we-do-para">Smart POS, inventory, and management systems to automate daily operations.</p>
+                                                        <ul class="we-do-example">
+                                                                <li>Management Systems</li>
+                                                                <li>POS & Inventory</li>
+                                                                <li>Business Automation</li>
+                                                                <li>Client & Lead Management</li>
+                                                                <li>Complete Operations Platforms</li>
+                                                                <li>Real-time Analytics & Reporting</li>
+                                                        </ul>
+                                                </div>
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-shopping-cart-line"></i></div>
+                                                        <h3 class="we-do-heading">E-Commerce Development</h3>
+                                                        <p class="we-do-para">High-converting online stores with smooth checkout and payment integrations.</p>
+                                                        <ul class="we-do-example">
+                                                                <li>Online Stores</li>
+                                                                <li>Product Management</li>
+                                                                <li>Payment Integrations</li>
+                                                                <li>Mobile Shopping Apps</li>
+                                                                <li>Multi-Vendor Marketplaces</li>
+                                                                <li>Order & Logistics Management</li>
+                                                        </ul>
+                                                </div>
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-apps-2-line"></i></div>
+                                                        <h3 class="we-do-heading">Custom Development</h3>
+                                                        <p class="we-do-para">Tailored software and API integrations built for unique business needs.</p>
+                                                        <ul class="we-do-example">
+                                                                <li>Tailored Business Solutions</li>
+                                                                <li>API Integrations</li>
+                                                                <li>Scalable Applications</li>
+                                                                <li>AI Integration</li>
+                                                                <li>Legacy System Modernization</li>
+                                                                <li>Database & System Migration</li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                        <div class="sub-section-btn">
+                                                <a href="services.html#services" class="section-btn">Explore Our Services</a>
+                                        </div>
+                                </div>
+
+                                <!-- ========= FEATURE PROJECTS ========== -->
+                                <div class="what-we-do" id="projects">
+                                        <p class="sub-section-banner"><i class="ri-open-arm-fill"></i> Featured Works & Digital Solutions</p>
+                                        <h2 class="section-heading">Transforming Ideas Into Digital Reality</h2>
+                                        <p class="section-para">Explore the digital solutions we've designed and developed to transform ideas into practical, scalable, and impactful experiences. From modern websites to custom business platforms, each project combines thoughtful design, modern technology, and reliable engineering to deliver meaningful digital value.</p>
+                                        <div class="what-we-do-grid">
+                                                <div class="home-img-card">
+                                                        <img src="project-img.png" alt="ByteForge POS System" class="card-img">
+                                                        <div class="card-content">
+                                                                <div class="home-project-icon"><i class="ri-computer-line"></i></div>
+                                                                <p class="home-project-info"><span>ByteForge Retail</span> - Hardware POS & Stock Tracking</p>
+                                                                <p class="success-badge"><i class="ri-verified-badge-line"></i> Completed</p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="home-img-card">
+                                                        <img src="project-img.png" alt="ClickCart Shopping E-Commerce" class="card-img">
+                                                        <div class="card-content">
+                                                                <div class="home-project-icon"><i class="ri-shopping-bag-3-line"></i></div>
+                                                                <p class="home-project-info"><span>ClickCart Shopping</span> - E-Commerce Platform & Checkout</p>
+                                                                <p class="success-badge"><i class="ri-verified-badge-line"></i> Completed</p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="home-img-card">
+                                                        <img src="project-img.png" alt="ApeKade Village Marketplace" class="card-img">
+                                                        <div class="card-content">
+                                                                <div class="home-project-icon"><i class="ri-tree-line"></i></div>
+                                                                <p class="home-project-info"><span>ApeKade Portal</span> - Village Marketplace Platform</p>
+                                                                <p class="success-badge"><i class="ri-verified-badge-line"></i> Completed</p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="home-img-card">
+                                                        <img src="project-img.png" alt="Keekee Media Layouts" class="card-img">
+                                                        <div class="card-content">
+                                                                <div class="home-project-icon"><i class="ri-gallery-line"></i></div>
+                                                                <p class="home-project-info"><span>KeeKee Digital</span> - Interactive Media & Branding</p>
+                                                                <p class="success-badge"><i class="ri-verified-badge-line"></i> Completed</p>
+                                                        </div>
+                                                </div>
+                                                
+                                                <div class="home-img-card">
+                                                        <img src="project-img.png" alt="CarePulse Health Management" class="card-img">
+                                                        <div class="card-content">
+                                                                <div class="home-project-icon"><i class="ri-heart-pulse-line"></i></div>
+                                                                <p class="home-project-info"><span>CarePulse Health</span> - Patient & Clinic Portal</p>
+                                                                <p class="success-badge"><i class="ri-verified-badge-line"></i> Completed</p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="home-img-card">
+                                                        <img src="project-img.png" alt="FleetFlow Logistics Platform" class="card-img">
+                                                        <div class="card-content">
+                                                                <div class="home-project-icon"><i class="ri-truck-line"></i></div>
+                                                                <p class="home-project-info"><span>FleetFlow</span> - Cargo & Delivery Logistics</p>
+                                                                <p class="success-badge"><i class="ri-verified-badge-line"></i> Completed</p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="home-img-card">
+                                                        <img src="project-img.png" alt="EstateHub Real Estate Portal" class="card-img">
+                                                        <div class="card-content">
+                                                                <div class="home-project-icon"><i class="ri-building-4-line"></i></div>
+                                                                <p class="home-project-info"><span>EstateHub</span> - Property Listing & Rental Portal</p>
+                                                                <p class="success-badge"><i class="ri-verified-badge-line"></i> Completed</p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="home-img-card">
+                                                        <img src="project-img.png" alt="FinTrack Analytics Dashboard" class="card-img">
+                                                        <div class="card-content">
+                                                                <div class="home-project-icon"><i class="ri-pie-chart-2-line"></i></div>
+                                                                <p class="home-project-info"><span>FinTrack</span> - Expense & Analytics Dashboard</p>
+                                                                <p class="success-badge"><i class="ri-verified-badge-line"></i> Completed</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="sub-section-btn">
+                                                <a href="home.html#start-project" class="section-btn">Discuss Your Project</a>
+                                        </div>
+                                </div>
+
+                                <!-- ========= WHY CHOOSE US ========== -->
+                                <div class="what-we-do">
+                                        <p class="sub-section-banner"><i class="ri-sparkling-fill"></i> Why Choose DreamWave Technology</p>
+                                        <h2 class="section-heading">Driven by Precision, Built for Reliability</h2>
+                                        <p class="section-para">We don't just write code - we engineer tailored digital solutions designed to elevate your brand and scale with your business. By combining cutting-edge technology, modern UI design, strict security standards, and dedicated ongoing support, we ensure your platform remains fast, secure, and future-proof.</p>
+                                        <div class="what-we-do-grid">
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-shake-hands-line"></i></div>
+                                                        <h3 class="we-do-heading">Business-Focused Solutions</h3>
+                                                        <p class="we-do-para">Advanced encryption and security standards to keep your data fully protected.</p>
+                                                </div>
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-braces-line"></i></div>
+                                                        <h3 class="we-do-heading">Modern Technology</h3>
+                                                        <p class="we-do-para">Flawless user experiences engineered to adapt perfectly across all screen sizes.</p>
+                                                </div>
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-shield-line"></i></div>
+                                                        <h3 class="we-do-heading">Security & Performance</h3>
+                                                        <p class="we-do-para">Clean code structure optimized to boost search rankings and drive consistent organic traffic.</p>
+                                                </div>
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-flashlight-line"></i></div>
+                                                        <h3 class="we-do-heading">Long-Term Support</h3>
+                                                        <p class="we-do-para">Dedicated maintenance and updates keeping your platforms running without downtime.</p>
+                                                </div>
+
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-stack-line"></i></div>
+                                                        <h3 class="we-do-heading">Scalable Architecture</h3>
+                                                        <p class="we-do-para">Advanced encryption and security standards to keep your data fully protected.</p>
+                                                </div>
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-palette-line"></i></div>
+                                                        <h3 class="we-do-heading">Tailored UI/UX Design</h3>
+                                                        <p class="we-do-para">Flawless user experiences engineered to adapt perfectly across all screen sizes.</p>
+                                                </div>
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-bar-chart-grouped-line"></i></div>
+                                                        <h3 class="we-do-heading">Data-Driven Insights</h3>
+                                                        <p class="we-do-para">Clean code structure optimized to boost search rankings and drive consistent organic traffic.</p>
+                                                </div>
+                                                <div class="we-do-card">
+                                                        <div class="we-do-icon"><i class="ri-plug-line"></i></div>
+                                                        <h3 class="we-do-heading">Seamless Integration</h3>
+                                                        <p class="we-do-para">Dedicated maintenance and updates keeping your platforms running without downtime.</p>
+                                                </div>
+                                        </div>
+                                        <div class="sub-section-btn">
+                                                <a href="about-us.html#testimonials" class="section-btn">What Our Clients Say</a>
+                                        </div>
+                                </div>
+
+                                <!-- ========= START PROJECTS ========== -->
+                                <div class="what-we-do" id="start-project">
+                                        <p class="sub-section-banner"><i class="ri-function-fill"></i> Let's Build Something Great</p>
+                                        <h2 class="section-heading">Have an Idea? Let’s Turn It Into Reality.</h2>
+                                        <p class="section-para">Have a project in mind or a business challenge to solve? Let's work together to transform your ideas into reliable, scalable, and impactful digital solutions built for the future.</p>
+                                        <div class="start-pro-content">
+                                                <div class="pro-container">
+                                                        <div class="process-top">
+                                                                <h3 class="small-heading">Our Process</h3>
+                                                                <p class="small-para">We follow a clear and collaborative process to turn your idea into a reliable, scalable, and future-ready digital solution.</p>
+                                                                <div class="process-point-list">
+                                                                        <div class="process-point">
+                                                                                <li><i class="ri-checkbox-circle-line"></i> Share Your Idea</li>
+                                                                                <p>Tell us about your business, goals, challenges, and the solution you have in mind.</p>
+                                                                        </div>
+                                                                        <div class="process-point">
+                                                                                <li><i class="ri-checkbox-circle-line"></i> Plan & Strategize</li>
+                                                                                <p>We understand your requirements and define the right features, technology, scope, and project direction.</p>
+                                                                        </div>
+                                                                        <div class="process-point">
+                                                                                <li><i class="ri-checkbox-circle-line"></i> Design & Develop</li>
+                                                                                <p>Our team transforms the plan into a modern, responsive, and high-performance digital solution.</p>
+                                                                        </div>
+                                                                        <div class="process-point">
+                                                                                <li><i class="ri-checkbox-circle-line"></i> Test & Refine</li>
+                                                                                <p>We carefully test functionality, responsiveness, security, and usability to ensure everything works as expected.</p>
+                                                                        </div>
+                                                                        <div class="process-point">
+                                                                                <li><i class="ri-checkbox-circle-line"></i> Launch & Support</li>
+                                                                                <p>We launch your solution and remain available for improvements, maintenance, and ongoing technical support.</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="process-bottom">
+                                                                <h3 class="small-heading">Prefer to Talk Directly?</h3>
+                                                                <p class="small-para">Have questions before starting? Reach out to us directly and let's discuss your project.</p>
+                                                                <div class="sub-section-btn">
+                                                                        <a href="contact-us.html#contact-us" class="section-btn">Contact Us !</a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <form action="" class="pro-form">
+                                                        <h3 class="form-title">Tell Us About Your Project</h3>
+                                                        <p class="form-para">Share a few details about your vision, timeline, and goals. We'll review your inquiry and get back to you with a suitable approach for bringing your project to life...</p>
+                                                        <div class="input-grid">
+                                                                <div class="input-grp">
+                                                                        <label for="client_name"><i class="ri-user-line"></i> Full Name <span>(required)</span></label>
+                                                                        <input type="text" name="client_name" id="client_name" placeholder="Enter your full name" autocomplete="off" autocorrect="off" required>
+                                                                </div>
+                                                                <div class="input-grp">
+                                                                        <label for="client_business_name"><i class="ri-shining-line"></i> Business Name <span>(optional)</span></label>
+                                                                        <input type="text" name="client_business_name" id="client_business_name"  placeholder="Enter your business name" autocomplete="off" autocorrect="off" spellcheck="off">
+                                                                </div>
+                                                                <div class="input-grp">
+                                                                        <label for="client_email"><i class="ri-mail-line"></i> Email Address <span>(required)</span></label>
+                                                                        <input type="email" name="client_email" id="client_email"  placeholder="example@example.com" autocomplete="off" autocorrect="off" required>
+                                                                </div>
+                                                                <div class="input-grp">
+                                                                        <label for="client_contact"><i class="ri-whatsapp-line"></i> Contact Number <span>(required)</span></label>
+                                                                        <input type="text" name="client_contact" id="client_contact"  placeholder="07X XXX XXXX" autocomplete="off" autocorrect="off" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);" pattern="[0-9]{10}" required>
+                                                                </div>
+                                                                <div class="input-grp">
+                                                                        <label for="client_project_type"><i class="ri-instance-line"></i> Project Type <span>(required)</span></label>
+                                                                        <select name="client_project_type" id="client_project_type"  placeholder="" autocomplete="off" autocorrect="off" required>
+                                                                                <option value="">-- Select your project type --</option>
+                                                                                <option value="business-website">Business Website</option>
+                                                                                <option value="personal-portfolio-website">Professional Portfolio Website</option>
+                                                                                <option value="web-application">Web Application</option>
+                                                                                <option value="e-commerce-website">E-Commerce Website</option>
+                                                                                <option value="business-management-system">Business Management System</option>
+                                                                                <option value="college-and-university-project">College & University Projects</option>
+                                                                                <option value="custom-software">Custom Software</option>
+                                                                                <option value="other-or-not-sure">Other / Not Sure</option>
+                                                                        </select>
+                                                                </div>
+                                                                <div class="input-grp">
+                                                                        <label for="client_timeline"><i class="ri-time-line"></i> Timeline <span>(required)</span></label>
+                                                                        <select name="client_timeline" id="client_timeline"  placeholder="" autocomplete="off" autocorrect="off" required>
+                                                                                <option value="">-- Select your timeline --</option>
+                                                                                <option value="as-soon-as-possible">As Soon As possible</option>
+                                                                                <option value="within-1-month">Within 01 Month</option>
+                                                                                <option value="1-2-months">01 - 02 Months</option>
+                                                                                <option value="2-3-months">02 - 03 Months</option>
+                                                                                <option value="flexible">Flexible</option>
+                                                                        </select>
+                                                                </div>
+                                                                <div class="input-grp input-btn">
+                                                                        <button type="submit">Submit Request Form</button>
+                                                                </div>
+                                                        </div>
+                                                </form>
+                                        </div>
+                                </div>
+                        </section>
+                </main>
+
+                <!-- ========= FOOTER SECTION ========== -->
+                <footer class="footer">
+                        <div class="footer-container">
+                                <div class="footer-grid">
+                                        <div class="footer-dwt">
+                                                <a href="index.html" class="footer-logo">
+                                                        <img src="dwt-logo.png">
+                                                        <div class="footer-logo-text">
+                                                                <h4>DreamWave</h4>
+                                                                <h5>Technology</h5>
+                                                        </div>
+                                                </a>
+                                                <div class="footer-para">Have a project in mind or a business challenge to solve? Let’s work together to transform your ideas into reliable, scalable, and impactful digital solutions built for the future.</div>
+                                                <div class="footer-contact">
+                                                        <!--<a href="" class="footer-contact-point"><i class="ri-whatsapp-line"></i> 07X XXX XXXX</a>
+                                                        <a href="mailto:info.dreamwave.tech@gmail.com" class="footer-contact-point"><i class="ri-mail-line"></i> info.dreamwave.tech@gmail.com</a>
+                                                        <p class="footer-contact-point"><i class="ri-map-pin-line"></i> Sri Lanka | Remote - Islandwide</p>-->
+                                                        <p class="footer-language-point">English &nbsp; | &nbsp; Sinhala &nbsp; | &nbsp; Tamil</p>
+                                                </div>
+                                        </div>
+                                        <div class="footer-company">
+                                                <h3 class="footer-section-title">Company</h3>
+                                                <a href="home.html" class="footer-company-link">Home</a>
+                                                <a href="services.html#services" class="footer-company-link">Our Services</a>
+                                                <a href="services.html#tech-stack" class="footer-company-link">Technologies</a>
+                                                <a href="about-us.html#about-us" class="footer-company-link">About Us</a>
+                                                <a href="about-us.html#blogs" class="footer-company-link">Blogs</a>
+                                                <a href="about-us.html#testimonials" class="footer-company-link">Testimonials</a>
+                                        </div>
+                                        <div class="footer-services">
+                                                <h3 class="footer-section-title">Services</h3>
+                                                <a href="services/business-website.html" class="footer-services-link">Web Development</a>
+                                                <a href="services/custom-software-development.html" class="footer-services-link">Software Solutions</a>
+                                                <a href="services/e-commerce-website.html" class="footer-services-link">E-Commerce</a>
+                                                <a href="services/custom-software-development.html" class="footer-services-link">Custome Development</a>
+                                                <a href="services/college-and-university-project.html" class="footer-services-link">College & University Projects</a>
+                                                <a href="services/pos-and-inventory-system.html" class="footer-services-link">POS & Inventory</a>
+                                                <a href="services/api-and-system-integration.html" class="footer-services-link">Payment Integrations</a>
+                                                <a href="services/website-maintenance-and-support.html" class="footer-services-link">Maintenance & Support</a>
+                                        </div>
+                                        <div class="footer-support">
+                                                <h3 class="footer-section-title">Support</h3>
+                                                <a href="contact-us.html#faq" class="footer-support-link">FQA's</a>
+                                                <a href="contact-us.html#contact-us" class="footer-support-link">Contact Us</a>
+                                                <a href="contact-us.html#contact-us" class="footer-support-link">Client Support</a>
+                                                <a href="privacy-policy.html#privacy-policy" class="footer-support-link">Privacy Policy</a>
+                                                <a href="privacy-policy.html#terms-conditions" class="footer-support-link">Terms & Conditions</a>
+                                                <a href="privacy-policy.html#cookie" class="footer-support-link">Cookie Policy</a>
+                                                <a href="mini-map.html" class="footer-support-link">Mini Map</a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="footer-copy-right">
+                                <p class="copy-right-msg">© 2026 DreamWave Technology | All Right Reserved.</p>
+                        </div>
+                </footer>
+        </div>
+
+        <script src="navbar.js"></script>
+        <script src="theme.js"></script>
+        <script src="cusror.js"></script>
+        
+        <script src="animation-bg.js"></script>
 </body>
 </html>
