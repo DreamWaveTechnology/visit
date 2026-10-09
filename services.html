@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Services</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="services.css">
+        <link rel="stylesheet" href="cursor.css">
+        <link rel="stylesheet" href="media-query.css">
+        <link rel="shortcut icon" href="dwt-logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+        <!-- ========= ANIMATED GRID BACKGROUND ========== -->
+        <!--<canvas id="kineticCanvas"></canvas>-->
+
+        <!-- ========= ANIMATED CURSOR ========== -->
+        <div>
+                <div class="custom-cursor-dot" data-cursor-dot></div>
+                <div class="custom-cursor-ring ring-1" data-cursor-ring-1></div>
+                <div class="custom-cursor-ring ring-2" data-cursor-ring-2></div>
+                <div class="custom-cursor-ring ring-3" data-cursor-ring-3></div>
+        </div>
+
+        <div class="container">
+                <nav class="navbar">
+                        <a href="index.html" class="logo">
+                                <img src="dwt-logo.png" alt="dreamwave technology logo">
+                                <div class="logo-text">
+                                        <h4>DreamWave</h4>
+                                        <h5>Technology</h5>
+                                </div>
+                        </a>
+                        <div class="nav-items">
+                                <div class="nav-links">
+                                        <a href="home.html" class="nav-link">Home</a>
+                                        <a href="services.html#services" class="nav-link">Our Services</a>
+                                        <a href="services.html#tech-stack" class="nav-link">Tech Stack</a>
+                                        <a href="about-us.html#about-us" class="nav-link">About Us</a>
+                                        <a href="about-us.html#blogs" class="nav-link">Blogs</a>
+                                        <a href="about-us.html#testimonials" class="nav-link">Testimonials</a>
+                                        <a href="contact-us.html#faq" class="nav-link">FAQ's</a>
+                                        <a href="contact-us.html#contact-us" class="nav-link">Contact Us</a>
+                                </div>
+                                <div class="scroll-progress" id="scrollProgress"></div>
+                        </div>
+                        <div class="nav-btns">
+                                <button class="theme-btn" id="themeBtn"><i class="ri-moon-fill" id="themeIcon"></i></button>
+                                <a href="login.html" class="nav-btn"><i class="ri-empathize-line"></i> Support</a>
+                        </div>
+                </nav>
+
+                <main class="main-container">
+                        <section class="services" id="services">
+                                <div class="what-we-do">
+                                        <p class="sub-section-banner"><i class="ri-service-fill"></i> Our Digital Services</p>
+                                        <h2 class="section-heading">From Ideas to Scalable Digital Solutions</h2>
+                                        <p class="section-para">We create purpose-built digital solutions that bring ideas, business processes, and customer experiences together in one connected ecosystem. Whether you need a professional website, powerful web application, e-commerce platform, business management system, POS solution, or custom software, we build with performance, security, usability, scalability, and long-term reliability in mind.</p>
+                                        <div class="services-grid">
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-global-line"></i></div>
+                                                        <h3 class="service-card-point">Business Website</h3>
+                                                        <a href="services/business-website.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-shopping-cart-2-line"></i></div>
+                                                        <h3 class="service-card-point">E-Commerce Website</h3>
+                                                        <a href="services/e-commerce-website.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-code-box-line"></i></div>
+                                                        <h3 class="service-card-point">Custom Software Development</h3>
+                                                        <a href="services/custom-software-development.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-user-star-line"></i></div>
+                                                        <h3 class="service-card-point">Professional Portfolio Website</h3>
+                                                        <a href="services/professional-portfolio-website.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-store-2-line"></i></div>
+                                                        <h3 class="service-card-point">POS & Inventory System</h3>
+                                                        <a href="services/pos-and-inventory-system.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-graduation-cap-line"></i></div>
+                                                        <h3 class="service-card-point">College & University Projects</h3>
+                                                        <a href="services/college-and-university-project.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-window-line"></i></div>
+                                                        <h3 class="service-card-point">Web Application</h3>
+                                                        <a href="services/web-application.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-dashboard-3-line"></i></div>
+                                                        <h3 class="service-card-point">Business Management System</h3>
+                                                        <a href="services/business-management-system.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-link-m"></i></div>
+                                                        <h3 class="service-card-point">API & System Integration</h3>
+                                                        <a href="services/api-and-system-integration.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-android-line"></i></div>
+                                                        <h3 class="service-card-point">Mobile Application Development</h3>
+                                                        <a href="services/mobile-application-development.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-calendar-check-line"></i></div>
+                                                        <h3 class="service-card-point">Booking & Reservation System</h3>
+                                                        <a href="services/booking-and-reservation-system.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-server-line"></i></div>
+                                                        <h3 class="service-card-point">Database & Backend Solutions</h3>
+                                                        <a href="services/database-and-backend-solutions.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-palette-line"></i></div>
+                                                        <h3 class="service-card-point">UI/UX & Digital Branding</h3>
+                                                        <a href="services/ui-ux-and-digital-branding.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-team-line"></i></div>
+                                                        <h3 class="service-card-point">Customer & CRM Systems</h3>
+                                                        <a href="services/customer-crm-system.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                                <div class="service-grid-card">
+                                                        <div class="service-card-icon"><i class="ri-customer-service-2-line"></i></div>
+                                                        <h3 class="service-card-point">Website Maintenance & Support</h3>
+                                                        <a href="services/website-maintenance-and-support.html" class="service-card-btn">Learn More</a>
+                                                </div>
+                                        </div>
+                                        <div class="sub-section-btn">
+                                                <a href="about-us.html" class="section-btn">About DreamWave</a>
+                                        </div>
+                                </div>
+                        </section>
+
+                        <section class="tech-stack" id="tech-stack">
+                                <div class="what-we-do">
+                                        <p class="sub-section-banner"><i class="ri-cpu-line"></i> Building With Next-Gen Technologies</p>
+                                        <h2 class="section-heading">Empowering Your Evolution with Cutting-Edge Tech</h2>
+                                        <p class="section-para">We leverage modern frameworks, scalable cloud architectures, and robust development tools to build high-performance web applications and tailored software solutions. From intuitive user interfaces to powerful backend systems, our technology stack is selected to ensure speed, security, and seamless scalability for every project.</p>
+
+                                        <div class="tect-stack-technologies">
+                                                <div class="tech-option-grid">
+                                                        <p class="tech-option"><i class="ri-html5-line"></i> HTML5</p>
+                                                        <p class="tech-option"><i class="ri-css3-line"></i> CSS3</p>
+                                                        <p class="tech-option"><i class="ri-javascript-line"></i> JavaScript (ES6+)</p>
+                                                        <p class="tech-option"><i class="ri-code-s-slash-line"></i> TypeScript</p>
+                                                        <p class="tech-option"><i class="ri-reactjs-line"></i> React.js</p>
+                                                        <p class="tech-option"><i class="ri-nextjs-line"></i> Next.js</p>
+                                                        <p class="tech-option"><i class="ri-vuejs-line"></i> Vue.js</p>
+                                                        <p class="tech-option"><i class="ri-angularjs-line"></i> Angular</p>
+                                                        <p class="tech-option"><i class="ri-tailwind-css-line"></i> Tailwind CSS</p>
+                                                        <p class="tech-option"><i class="ri-bootstrap-line"></i> Bootstrap</p>
+                                                        <p class="tech-option"><i class="ri-nodejs-line"></i> Node.js</p>
+                                                        <p class="tech-option"><i class="ri-code-box-line"></i> Express.js</p>
+                                                        <p class="tech-option"><i class="ri-file-line"></i> Python (Django / FastAPI)</p>
+                                                        <p class="tech-option"><i class="ri-java-line"></i> Java (Spring Boot)</p>
+                                                        <p class="tech-option"><i class="ri-php-line"></i> PHP</p>
+                                                        <p class="tech-option"><i class="ri-terminal-window-line"></i> C# (.NET)</p>
+                                                        <p class="tech-option"><i class="ri-php-line"></i> Laravel</p>
+                                                        <p class="tech-option"><i class="ri-route-line"></i> GraphQL</p>
+                                                        <p class="tech-option"><i class="ri-database-2-line"></i> PostgreSQL</p>
+                                                        <p class="tech-option"><i class="ri-database-line"></i> MySQL</p>
+                                                        <p class="tech-option"><i class="ri-leaf-line"></i> MongoDB</p>
+                                                        <p class="tech-option"><i class="ri-fire-line"></i> Firebase</p>
+                                                        <p class="tech-option"><i class="ri-dashboard-2-line"></i> Supabase</p>
+                                                        <p class="tech-option"><i class="ri-hard-drive-2-line"></i> Microsoft SQL Server</p>
+                                                        <p class="tech-option"><i class="ri-git-branch-line"></i> Git & GitHub</p>
+                                                        <p class="tech-option"><i class="ri-cloud-line"></i> Vercel</p>
+                                                        <p class="tech-option"><i class="ri-google-line"></i> Google Cloud Platform</p>
+                                                        <p class="tech-option"><i class="ri-amazon-line"></i> AWS (S3 / EC2)</p>
+                                                        <p class="tech-option"><i class="ri-bug-line"></i> Docker</p>
+                                                        <p class="tech-option"><i class="ri-shield-check-line"></i> SSL / TLS & JWT</p>
+                                                        <p class="tech-option"><i class="ri-pulse-line"></i> Google Cloud Observability</p>
+                                                        <p class="tech-option"><i class="ri-flutter-line"></i> Flutter</p>
+                                                        <p class="tech-option"><i class="ri-reactjs-line"></i> React Native</p>
+                                                        <p class="tech-option"><i class="ri-android-line"></i> Kotlin (Android)</p>
+                                                        <p class="tech-option"><i class="ri-apple-line"></i> Swift (iOS)</p>
+                                                        <p class="tech-option"><i class="ri-palette-line"></i> Figma</p>
+                                                        <p class="tech-option"><i class="ri-paint-brush-line"></i> Adobe XD</p>
+                                                </div>
+                                        </div>
+
+                                        <!--<div class="tect-stack-technologies">
+                                                <h4 class="tech-option-title">Frontend Technologies</h4>
+                                                <div class="tech-option-grid">
+                                                        <p class="tech-option"><i class="ri-html5-line"></i> HTML5</p>
+                                                        <p class="tech-option"><i class="ri-css3-line"></i> CSS3</p>
+                                                        <p class="tech-option"><i class="ri-javascript-line"></i> JavaScript (ES6+)</p>
+                                                        <p class="tech-option"><i class="ri-code-s-slash-line"></i> TypeScript</p>
+                                                        <p class="tech-option"><i class="ri-reactjs-line"></i> React.js</p>
+                                                        <p class="tech-option"><i class="ri-nextjs-line"></i> Next.js</p>
+                                                        <p class="tech-option"><i class="ri-vuejs-line"></i> Vue.js</p>
+                                                        <p class="tech-option"><i class="ri-angularjs-line"></i> Angular</p>
+                                                        <p class="tech-option"><i class="ri-svelte-line"></i> Svelte</p>
+                                                        <p class="tech-option"><i class="ri-tailwind-css-line"></i> Tailwind CSS</p>
+                                                        <p class="tech-option"><i class="ri-bootstrap-line"></i> Bootstrap</p>
+                                                </div>
+                                        </div>
+                                        <div class="tect-stack-technologies">
+                                                <h4 class="tech-option-title">Backend & API Technologies</h4>
+                                                <div class="tech-option-grid">
+                                                        <p class="tech-option"><i class="ri-nodejs-line"></i> Node.js</p>
+                                                        <p class="tech-option"><i class="ri-code-box-line"></i> Express.js</p>
+                                                        <p class="tech-option"><i class="ri-file-line"></i> Python (Django / FastAPI)</p>
+                                                        <p class="tech-option"><i class="ri-java-line"></i> Java (Spring Boot)</p>
+                                                        <p class="tech-option"><i class="ri-php-line"></i> PHP (Laravel)</p>
+                                                        <p class="tech-option"><i class="ri-terminal-window-line"></i> C# (.NET)</p>
+                                                        <p class="tech-option"><i class="ri-exchange-box-line"></i> RESTful APIs</p>
+                                                        <p class="tech-option"><i class="ri-route-line"></i> GraphQL</p>
+                                                        <p class="tech-option"><i class="ri-links-line"></i> WebSockets</p>
+                                                </div>
+                                        </div>
+                                        <div class="tect-stack-technologies">
+                                                <h4 class="tech-option-title">Databases & Querying</h4>
+                                                <div class="tech-option-grid">
+                                                        <p class="tech-option"><i class="ri-database-2-line"></i> PostgreSQL</p>
+                                                        <p class="tech-option"><i class="ri-database-line"></i> MySQL</p>
+                                                        <p class="tech-option"><i class="ri-leaf-line"></i> MongoDB</p>
+                                                        <p class="tech-option"><i class="ri-fire-line"></i> Firebase</p>
+                                                        <p class="tech-option"><i class="ri-server-line"></i> Redis</p>
+                                                        <p class="tech-option"><i class="ri-dashboard-2-line"></i> Supabase</p>
+                                                        <p class="tech-option"><i class="ri-hard-drive-2-line"></i> Microsoft SQL Server</p>
+                                                </div>
+                                        </div>
+                                        <div class="tect-stack-technologies">
+                                                <h4 class="tech-option-title">DevOps, Cloud & Security</h4>
+                                                <div class="tech-option-grid">
+                                                        <p class="tech-option"><i class="ri-git-branch-line"></i> Git & GitHub</p>
+                                                        <p class="tech-option"><i class="ri-cloud-line"></i> Vercel</p>
+                                                        <p class="tech-option"><i class="ri-google-line"></i> Google Cloud Platform</p>
+                                                        <p class="tech-option"><i class="ri-amazon-line"></i> AWS (S3 / EC2)</p>
+                                                        <p class="tech-option"><i class="ri-bug-line"></i> Docker</p>
+                                                        <p class="tech-option"><i class="ri-shield-check-line"></i> SSL / TLS & JWT</p>
+                                                        <p class="tech-option"><i class="ri-pulse-line"></i> Google Cloud Observability</p>
+                                                </div>
+                                        </div>
+                                        <div class="tect-stack-technologies">
+                                                <h4 class="tech-option-title">Mobile App Technologies</h4>
+                                                <div class="tech-option-grid">
+                                                        <p class="tech-option"><i class="ri-flutter-line"></i> Flutter</p>
+                                                        <p class="tech-option"><i class="ri-reactjs-line"></i> React Native</p>
+                                                        <p class="tech-option"><i class="ri-android-line"></i> Kotlin (Android)</p>
+                                                        <p class="tech-option"><i class="ri-apple-line"></i> Swift (iOS)</p>
+                                                </div>
+                                        </div>
+                                        <div class="tect-stack-technologies">
+                                                <h4 class="tech-option-title">Design & Prototyping Tools</h4>
+                                                <div class="tech-option-grid">
+                                                        <p class="tech-option"><i class="ri-palette-line"></i> Figma</p>
+                                                        <p class="tech-option"><i class="ri-paint-brush-line"></i> Adobe XD</p>
+                                                        <p class="tech-option"><i class="ri-layout-masonry-line"></i> Wireframing & Design Systems</p>
+                                                </div>
+                                        </div>-->
+
+                                        <div class="tech-start-pro">
+                                                <div class="tech-start-pro-card">
+                                                        <div class="tech-start-pro-card-text">
+                                                                <h3 class="tech-start-pro-card-heading">Ready to Start Your Project ?</h3>
+                                                                <p class="tech-start-pro-card-para">We partner with you to turn your ideas into high-performing, scalable digital products through clear strategy, smart design, and solid engineering.</p>
+                                                        </div>
+                                                        <div class="tech-start-pro-card-button">
+                                                                <a href="home.html#start-project" class="tech-start-pro-card-btn">Start Your Project</a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                        </section>
+                </main>
+                
+                <!-- ========= FOOTER SECTION ========== -->
+                <footer class="footer">
+                        <div class="footer-container">
+                                <div class="footer-grid">
+                                        <div class="footer-dwt">
+                                                <a href="index.html" class="footer-logo">
+                                                        <img src="dwt-logo.png">
+                                                        <div class="footer-logo-text">
+                                                                <h4>DreamWave</h4>
+                                                                <h5>Technology</h5>
+                                                        </div>
+                                                </a>
+                                                <div class="footer-para">Have a project in mind or a business challenge to solve? Let’s work together to transform your ideas into reliable, scalable, and impactful digital solutions built for the future.</div>
+                                                <div class="footer-contact">
+                                                        <!--<a href="" class="footer-contact-point"><i class="ri-whatsapp-line"></i> 07X XXX XXXX</a>
+                                                        <a href="mailto:info.dreamwave.tech@gmail.com" class="footer-contact-point"><i class="ri-mail-line"></i> info.dreamwave.tech@gmail.com</a>
+                                                        <p class="footer-contact-point"><i class="ri-map-pin-line"></i> Sri Lanka | Remote - Islandwide</p>-->
+                                                        <p class="footer-language-point">English &nbsp; | &nbsp; Sinhala &nbsp; | &nbsp; Tamil</p>
+                                                </div>
+                                        </div>
+                                        <div class="footer-company">
+                                                <h3 class="footer-section-title">Company</h3>
+                                                <a href="home.html" class="footer-company-link">Home</a>
+                                                <a href="services.html#services" class="footer-company-link">Our Services</a>
+                                                <a href="services.html#tech-stack" class="footer-company-link">Technologies</a>
+                                                <a href="about-us.html#about-us" class="footer-company-link">About Us</a>
+                                                <a href="about-us.html#blogs" class="footer-company-link">Blogs</a>
+                                                <a href="about-us.html#testimonials" class="footer-company-link">Testimonials</a>
+                                        </div>
+                                        <div class="footer-services">
+                                                <h3 class="footer-section-title">Services</h3>
+                                                <a href="services/business-website.html" class="footer-services-link">Web Development</a>
+                                                <a href="services/custom-software-development.html" class="footer-services-link">Software Solutions</a>
+                                                <a href="services/e-commerce-website.html" class="footer-services-link">E-Commerce</a>
+                                                <a href="services/custom-software-development.html" class="footer-services-link">Custome Development</a>
+                                                <a href="services/college-and-university-project.html" class="footer-services-link">College & University Projects</a>
+                                                <a href="services/pos-and-inventory-system.html" class="footer-services-link">POS & Inventory</a>
+                                                <a href="services/api-and-system-integration.html" class="footer-services-link">Payment Integrations</a>
+                                                <a href="services/website-maintenance-and-support.html" class="footer-services-link">Maintenance & Support</a>
+                                        </div>
+                                        <div class="footer-support">
+                                                <h3 class="footer-section-title">Support</h3>
+                                                <a href="contact-us.html#faq" class="footer-support-link">FQA's</a>
+                                                <a href="contact-us.html#contact-us" class="footer-support-link">Contact Us</a>
+                                                <a href="contact-us.html#contact-us" class="footer-support-link">Client Support</a>
+                                                <a href="privacy-policy.html#privacy-policy" class="footer-support-link">Privacy Policy</a>
+                                                <a href="privacy-policy.html#terms-conditions" class="footer-support-link">Terms & Conditions</a>
+                                                <a href="privacy-policy.html#cookie" class="footer-support-link">Cookie Policy</a>
+                                                <a href="mini-map.html" class="footer-support-link">Mini Map</a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="footer-copy-right">
+                                <p class="copy-right-msg">© 2026 DreamWave Technology | All Right Reserved.</p>
+                        </div>
+                </footer>
+        </div>
+
+        <script src="navbar.js"></script>
+        <script src="theme.js"></script>
+        <script src="cusror.js"></script>
+        <script src="services.js"></script>
+        
+        <script src="animation-bg.js"></script>
+</body>
+</html>
